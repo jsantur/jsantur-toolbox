@@ -1,0 +1,1 @@
+convertir ps1 a *.exe
