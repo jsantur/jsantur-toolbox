@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="">
-    <img src="./recursos/jsanturToolbox.png" alt="Jsantur ToolBox" width="80%">
+    <img src="./Recursos/jsanturToolbox.png" alt="Jsantur ToolBox" width="80%">
   </a>
 </p>
 
