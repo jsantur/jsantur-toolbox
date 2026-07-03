@@ -1,41 +1,149 @@
-🧹 JSANTUR Toolbox ✨
-Mi espacio personal de scripts y herramientas de automatización para Windows.
+# 🧹 JSANTUR Toolbox
 
-👋 Bienvenido
-Bienvenido a mi rincón de código. Aquí almaceno, organizo y mejoro mis scripts de PowerShell, Batch y otras utilidades diseñadas para hacer la vida más fácil, optimizar sistemas y automatizar tareas tediosas sin tener que descargar programas de terceros dudosos.
+> Mi espacio personal de scripts y herramientas de automatización para Windows.
 
-Todo el código está comentado, es limpio y está pensado para ser reutilizado y adaptable.
+---
 
-🖼️ Vista Previa del Proyecto Estrella
-Interfaz gráfica de Limpieza de Perfil
-Interfaz de usuario moderna y minimalista, construida con WPF en PowerShell.
-⭐ Proyectos Destacados
-🪟 Limpieza de Perfil de Usuario
-Una utilidad gráfica avanzada que automatiza la limpieza de las carpetas personales (Documentos, Descargas, Imágenes, etc.).
+## 👋 Bienvenido
 
-¿Por qué es especial?
+Bienvenido a mi repositorio.
 
-Diseño Nativo: Inspirado en macOS. Fondo blanco, esquinas redondeadas, sombras suaves y sin ventanas negras de consola.
-Seguridad Total: No elimina nada permanentemente. Todo se envía a la Papelera de Reciclaje.
-Inteligente: En el Escritorio respeta los accesos directos (.lnk) y los archivos ocultos del sistema.
-Rendimiento: Usa programación Multi-hilo (Runspaces). Limpia cientos de archivos al instante sin congelar la interfaz.
-Feedback Visual: Barra de progreso real y notificaciones del sistema (SMS/Toast) al finalizar.
-📁 Estructura del Repositorio
-La carpeta está organizada por sistema operativo y por proyectos para mantenerlo todo limpio:
+Aquí almaceno, organizo y mejoro mis scripts de **PowerShell**, **Batch** y otras utilidades diseñadas para automatizar tareas, optimizar Windows y simplificar procesos cotidianos, evitando depender de programas de terceros.
 
-jsantur-toolbox/│├── README.md                   <-- ¡Estás aquí!├── .gitignore                  <-- Archivos que GitHub debe ignorar (ej. .exe)│└── Windows/                    <-- Scripts para el ecosistema Windows    └── LimpiezaPerfil/         <-- Herramienta de limpieza WPF        ├── AppLimpiadora.ps1   <-- Código fuente de la interfaz        ├── Lanzador.bat        <-- Ejecutable invisible (Modo normal)        ├── Diagnosticar.bat    <-- Ejecutable con consola (Modo debug)        └── clearjs.ico         <-- Icono personalizado del .exe
-🚀 ¿Cómo usar los scripts?
-La mayoría de mis scripts están diseñados para ser "Plug & Play" (Conectar y usar):
+Todo el código está escrito siguiendo buenas prácticas:
 
-Ve a la carpeta del script que necesites.
-Recomendado: Haz doble clic en el archivo Lanzador.bat (esto oculta la consola de fondo para una experiencia limpia).
-Si algo falla: Usa el archivo Diagnosticar.bat para ver los errores en pantalla y poder solucionarlos.
-(Opcional) Si prefieres compilar el .ps1 en un .exe con icono propio, usa la herramienta Win-PS2EXE.
-🛠️ Stack Tecnológico
-PowerShell Para la lógica y automatización del sistema.
-Windows WPF y XAML para las interfaces gráficas modernas.
-Batch Para lanzadores rápidos y silentes.
-<div align="center">
-<sub>Hecho con ❤️ y mucho café por <strong>JSANTUR</strong></sub>
-</div>
+- ✅ Código limpio y organizado.
+- ✅ Comentarios explicativos.
+- ✅ Fácil de modificar y reutilizar.
+- ✅ Enfoque en rendimiento y simplicidad.
+
+---
+
+# ⭐ Proyecto Destacado
+
+## 🪟 Limpieza de Perfil de Usuario
+
+Aplicación gráfica desarrollada en **PowerShell + WPF** para limpiar el perfil del usuario de forma rápida, segura y moderna.
+
+### ✨ Características
+
+- 🎨 **Interfaz moderna**
+  - Inspirada en macOS.
+  - Fondo blanco.
+  - Esquinas redondeadas.
+  - Sombras suaves.
+  - Sin consola negra visible.
+
+- 🛡️ **Seguridad**
+  - No elimina archivos permanentemente.
+  - Todo el contenido se envía a la **Papelera de reciclaje**.
+
+- 🧠 **Limpieza inteligente**
+  - Conserva los accesos directos (`.lnk`) del Escritorio.
+  - Respeta archivos ocultos y del sistema.
+
+- ⚡ **Alto rendimiento**
+  - Uso de **Runspaces (multihilo)**.
+  - Limpieza de cientos de archivos sin bloquear la interfaz.
+
+- 📊 **Retroalimentación visual**
+  - Barra de progreso en tiempo real.
+  - Notificaciones tipo **Toast** al finalizar.
+
+---
+
+## 📂 Estructura del repositorio
+
+```text
+jsantur-toolbox/
+│
+├── README.md
+├── .gitignore
+│
+└── Windows/
+    │
+    └── LimpiezaPerfil/
+        │
+        ├── AppLimpiadora.ps1
+        ├── Lanzador.bat
+        ├── Diagnosticar.bat
+        └── clearjs.ico
 ```
+
+---
+
+# 🚀 Cómo utilizar
+
+1. Descarga o clona este repositorio.
+
+2. Navega hasta el proyecto que deseas utilizar.
+
+3. Ejecuta:
+
+### ✔ Modo normal
+
+```text
+Lanzador.bat
+```
+
+Oculta la consola y abre directamente la interfaz gráfica.
+
+### 🛠 Modo diagnóstico
+
+```text
+Diagnosticar.bat
+```
+
+Muestra la consola para visualizar posibles errores durante la ejecución.
+
+### 📦 Compilar como EXE (Opcional)
+
+Si deseas distribuir la aplicación como ejecutable, puedes compilar el archivo `.ps1` utilizando:
+
+- **Win-PS2EXE**
+
+---
+
+# 🛠 Tecnologías
+
+| Tecnología | Uso |
+|------------|-----|
+| PowerShell | Automatización y lógica |
+| WPF + XAML | Interfaces gráficas |
+| Batch (.bat) | Lanzadores rápidos |
+
+---
+
+# 📌 Objetivo del proyecto
+
+Crear herramientas que permitan:
+
+- Automatizar tareas repetitivas.
+- Optimizar Windows.
+- Mejorar la productividad.
+- Evitar software innecesario.
+- Compartir scripts útiles y fáciles de adaptar.
+
+---
+
+# 🤝 Contribuciones
+
+Las sugerencias, mejoras y reportes de errores son siempre bienvenidos.
+
+Si encuentras un problema o tienes una idea para mejorar algún script, no dudes en abrir un **Issue** o enviar un **Pull Request**.
+
+---
+
+# 📄 Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT**, salvo que se indique lo contrario en algún proyecto específico.
+
+---
+
+<div align="center">
+
+### ☕ Hecho con pasión, PowerShell y mucho café.
+
+**JSANTUR**
+
+</div>
